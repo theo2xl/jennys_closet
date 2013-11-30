@@ -19,7 +19,7 @@
         <td><%= item.size %></td>
         <td><%= item.color %></td>
         <td><%= item.tag %></td>
-        <td><%= item.image %></td>
+        <td><img src="<%= item.image %>" class="thumbnail"/></td>
         <td><%= link_to 'Show', item %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
         <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
