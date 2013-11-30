@@ -25,6 +25,6 @@ describe "items/index" do
     assert_select "tr>td", :text => "Size".to_s, :count => 2
     assert_select "tr>td", :text => "Color".to_s, :count => 2
     assert_select "tr>td", :text => "Tag".to_s, :count => 2
-    #assert_select "tr>td img[src='Image']", :text => "Image".to_s, :count => 2
+    assert_select "tr>td img", :src => "Image".to_s, :count => 2
   end
 end
